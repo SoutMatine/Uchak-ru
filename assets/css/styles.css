@@ -690,6 +690,15 @@ header {
         justify-content: space-between;
         gap: calc(var(--space-5) * 2);
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            .vertical-line {
+                height: 5px;
+                width: 100%;
+            }
+        }
+
         .about-us__text {
             display: flex;
             flex-direction: column;
