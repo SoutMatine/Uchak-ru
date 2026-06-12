@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #D85E0F;
+    --yellow-color: #E8A030;
+    --red-color: #C0392B;
+    --text-color: #F5E8D5;
+    --text-muted: #C4A882;
+    --text-dim: #8A6A4A;
+    --bg-color: #1A0E06;
+    --bg-secondary: #3A1E0A;
+    --bg-mid: #2C1608;
+    --border-color: rgba(216, 94, 15, 0.4);
+
+    --fs-1: 0.5rem;
+    --fs-2: 0.625rem;
+    --fs-3: 0.75rem;
+    --fs-4: 0.875rem;
+    --fs-5: 1rem;
+    --fs-6: 1.125rem;
+    --fs-7: 1.25rem;
+    --fs-8: 1.5rem;
+    --fs-9: 1.75rem;
+
+    --fw-1: 300;
+    --fw-2: 400;
+    --fw-3: 500;
+    --fw-4: 700;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 1rem;
+    --space-4: 1.25rem;
+    --space-5: 1.5rem;
+    --space-6: 1.75rem;
+}
