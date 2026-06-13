@@ -7,7 +7,6 @@
         <title>Учак.ру</title>
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/gallery.css">
 
         <script
             src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -247,13 +246,13 @@
                             <div class="swiper-slide gallery-slide"></div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next">
+                    <div class="swiper-pagination gallery-pagination"></div>
+                    <div class="swiper-button-next gallery-button-next">
                         <svg width="24" height="24">
                             <use href="/sprite.svg#icon-arrow"></use>
                         </svg>
                     </div>
-                    <div class="swiper-button-prev">
+                    <div class="swiper-button-prev gallery-button-prev">
                         <svg width="24" height="24">
                             <use href="/sprite.svg#icon-arrow"></use>
                         </svg>
@@ -370,6 +369,58 @@
                 </div>
             </div>
         </footer>
+        <!-- =============================== FOOTER ============================== -->
+
+        <!-- =============================== MODAL =============================== -->
+
+        <div class="modal">
+            <div class="modal__content">
+                <div class="modal-cross">
+                    <svg width="24" height="24">
+                        <use href="sprite.svg#icon-cross"></use>
+                    </svg>
+                </div>
+                <div class="modal-gallery">
+                    <div class="modal-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery-slide"></div>
+                            <div class="swiper-slide gallery-slide"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination modal-pagination"></div>
+                    <div class="swiper-button-next modal-button-next">
+                        <svg width="24" height="24">
+                            <use href="/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev modal-button-prev">
+                        <svg width="24" height="24">
+                            <use href="/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-info__top">
+                            <div class="product-info__category">Афганский
+                                казан</div>
+                            <h3>Афганский казан CHE TO</h3>
+                            <p class="product-info__description">1Описание
+                                Описание Описание Описание Описание Описание
+                            </p>
+                            <span class="product-info__status nal">В
+                                наличии</span>
+                        </div>
+
+                        <div class="product-info__bottom">
+                            <span class="product-price">17 000
+                                ₽</span>
+                            <button class="btn primary-btn">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>

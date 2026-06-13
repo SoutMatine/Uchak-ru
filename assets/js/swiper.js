@@ -2,13 +2,13 @@ var swiper = new Swiper(".gallery-swiper", {
     slidesPerView: 4,
     spaceBetween: 24,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".gallery-pagination",
         clickable: true,
     },
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".gallery-button-next",
+        prevEl: ".gallery-button-prev",
     },
 
     breakpoints: {
@@ -33,4 +33,18 @@ var swiper = new Swiper(".gallery-swiper", {
         }
     }
 });
+
+var modalSwiper = new Swiper(".modal-swiper", {
+    slidesPerView: 1,
+    pagination: {
+        el: ".modal-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".modal-button-next",
+        prevEl: ".modal-button-prev",
+    },
+});
+
 
