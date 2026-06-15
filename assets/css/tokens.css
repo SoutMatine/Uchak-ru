@@ -31,4 +31,8 @@
     --space-4: 1.25rem;
     --space-5: 1.5rem;
     --space-6: 1.75rem;
+
+    --transition-bounce: cubic-bezier(0, 1.24, 0.39, 1.17);
+    --transition-ease-sharp: cubic-bezier(1, 0, 0, 1);
+    --transition-ease-soft: cubic-bezier(0.3, 0.74, 0.55, 1)
 }

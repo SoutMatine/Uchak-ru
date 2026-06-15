@@ -29,11 +29,11 @@
     </symbol>
 
     <symbol id='icon-cross' viewBox="0 0 15 18" fill="none">
-        <path d="M13.774 0.770996C9.61733 5.7595 6.29166 11.3855 2.58594 16.7179" stroke="white" stroke-width="1.5418"
+        <path d="M13.774 0.770996C9.61733 5.7595 6.29166 11.3855 2.58594 16.7179" stroke="white" stroke-width="1"
             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
         <path
             d="M1.04199 1.92799C0.956424 1.92799 0.719758 1.87248 0.784514 1.92799C3.27761 4.0711 5.93491 6.02303 8.3725 8.23012C10.5333 10.1867 12.0428 13.0282 13.6455 15.4319"
-            stroke="white" stroke-width="1.5418" stroke-miterlimit="10" stroke-linecap="round"
+            stroke="white" stroke-width="1" stroke-miterlimit="10" stroke-linecap="round"
             stroke-linejoin="round" />
     </symbol>
 

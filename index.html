@@ -7,9 +7,6 @@
         <title>Учак.ру</title>
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/assets/css/base.css">
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     </head>
 
     <body>
@@ -25,23 +22,31 @@
                     </a>
                     <nav>
                         <ul class="nav__row">
-                            <li class="nav-item">Каталог</li>
-                            <li class="nav-item">О компании</li>
-                            <li class="nav-item">Контакты</li>
+                            <li class="nav-item"><a href="">Каталог</a></li>
+                            <li class="nav-item"><a href="">О компании</a></li>
+                            <li class="nav-item"><a href="">Контакты</a></li>
                         </ul>
                     </nav>
                     <a href="#" class="btn primary-btn">
                         Связаться
                     </a>
-                    <button class="burger-menu">
-                        <svg class="icon" width="24" height="24">
+
+                    <button class="burger-menu open">
+
+                        <svg class="icon burger-open" width="24" height="24">
                             <use href="/sprite.svg#icon-burger-menu"></use>
                         </svg>
+
+                        <svg class="icon burger-close" width="24" height="24">
+                            <use href="sprite.svg#icon-cross"></use>
+                        </svg>
                     </button>
+
                 </div>
                 <div class="header__row-mob"></div>
             </div>
         </header>
+        <div class="dark-bg"></div>
         <!-- ============================== HEADER ============================== -->
 
         <!-- ============================== MAIN SCREEN ============================== -->
@@ -421,6 +426,17 @@
                 </div>
             </div>
         </div>
+        <!-- ============================== MODAL ============================== -->
+
+        <!-- ============================== COOKIE ============================== -->
+        <div class="cookie">
+            <p>Мы используем файлы cookie для того, чтобы улучшить работу сайта
+                и предоставить вам больше возможностей. Продолжая использовать
+                сайт, вы соглашаетесь с условиями <a href="#">использования
+                    файлов cookie.</a></p>
+            <button class="btn secondary-btn">Хорошо</button>
+        </div>
+        <!-- =============================== COOKIE ================================ -->
 
         <script
             src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
@@ -430,6 +446,8 @@
         <!-- ScrollSmoother requires ScrollTrigger -->
         <script
             src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <script src="/assets/js/app.js"></script>
         <script src="/assets/js/swiper.js"></script>

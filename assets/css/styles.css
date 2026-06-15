@@ -95,6 +95,43 @@ svg {
   }
 }
 
+button:has(.icon) {
+  width: 32px;
+  aspect-ratio: 1;
+
+  display: none;
+
+  background-color: none;
+  background: none;
+  outline: none;
+  border: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.dark-bg {
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+
+  z-index: 2;
+  transition: background 0.7s var(--transition-ease-soft);
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: auto;
+  }
+}
+
 .vertical-line {
   width: 5px;
   height: 100px;
@@ -378,7 +415,9 @@ header {
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--border-color);
 
-  z-index: 2;
+  z-index: 3;
+
+  transition: height 0.7s var(--transition-bounce);
 
   .header__row,
   .header__row-mob {
@@ -391,11 +430,15 @@ header {
       .nav-item {
         text-transform: uppercase;
 
+        a {
+          color: var(--text-dim);
+        }
+
         &.active {
           color: var(--text-color);
         }
 
-        &:not(.active):hover {
+        a:not(.active):hover {
           color: var(--text-muted);
         }
       }
@@ -403,47 +446,73 @@ header {
   }
 
   .header__row {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    background-color: var(--bg-color);
+
     padding: var(--space-3) 0;
+
+    z-index: 3;
 
     @media (max-width: 768px) {
       padding: var(--space-2) 0;
     }
+  }
 
-    .burger-menu {
-      width: 32px;
-      aspect-ratio: 1;
+  .burger-menu {
+    position: relative;
 
-      display: none;
+    .icon {
+      position: absolute;
+      top: 0;
 
-      background-color: none;
-      background: none;
-      outline: none;
-      border: none;
+      opacity: 0;
+      transition: opacity 1s var(--transition-bounce);
+    }
 
-      svg {
-        width: 100%;
-        height: 100%;
+    &.open {
+      .burger-open {
+        opacity: 1;
       }
+    }
 
-      @media (max-width: 768px) {
-        display: block;
+    &.close {
+      .burger-close {
+        opacity: 1;
       }
     }
   }
 
+  .close-menu {
+    opacity: 0;
+  }
+
   .header__row-mob {
     width: 100%;
-    display: none;
     flex-direction: column;
     align-items: center;
     gap: calc(var(--space-5) * 2);
 
-    margin-top: calc(var(--space-5) * 2);
-    padding: 0 0 var(--space-2) 0;
+    position: absolute;
+    transform: translateY(-101%);
+    left: 0;
+
+    padding: calc(var(--space-5) * 2) calc(var(--space-1) * 3) var(--space-2);
+
+    transition: transform 0.5s var(--transition-bounce);
+
+    z-index: 2;
+
+    &.active {
+      transition: transform 0.5s var(--transition-ease-sharp);
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
 
     .nav__row {
       flex-direction: column;
@@ -453,10 +522,6 @@ header {
     .btn {
       width: 100%;
     }
-
-    @media (max-width: 768px) {
-      /* display: flex; */
-    }
   }
 }
 
@@ -465,7 +530,7 @@ header {
 /* ============================== MAIN SCREEN ============================== */
 
 .main-screen {
-  margin-top: 20svh;
+  padding-top: calc(var(--space-5) * 3);
 
   .main-screen__row {
     display: flex;
@@ -850,6 +915,10 @@ footer {
           color: var(--text-dim);
         }
 
+        a:hover {
+          color: var(--text-muted);
+        }
+
         @media (max-width: 992px) {
           display: none;
         }
@@ -1000,5 +1069,41 @@ footer {
         }
       }
     }
+  }
+}
+
+/* ================================ MODAL ============================== */
+
+/* ============================== COOKIE =============================== */
+
+.cookie {
+  max-width: 1000px;
+  position: fixed;
+  bottom: var(--space-1);
+  left: var(--space-1);
+
+  display: none;
+  gap: var(--space-3);
+
+  background-color: var(--bg-mid);
+  border: 1px solid var(--primary-color);
+
+  padding: var(--space-5);
+
+  z-index: 5;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    padding: var(--space-2);
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: underline;
+  }
+
+  .btn {
+    padding-inline: calc(var(--space-5) * 2);
   }
 }
