@@ -64,7 +64,7 @@ function openMobMenu() {
     header.style.height = `calc(${space}px + 1px)`
 
     function openClose() {
-        
+
         if (menu.classList.contains("active")) {
             menu.style.transform = `translateY(0)`
             header.style.height = `calc(${space}px + ${menuSpace}px + 1px)`
@@ -119,6 +119,44 @@ function openMobMenu() {
 openMobMenu()
 
 
+function checkModalIsOpen() {
+    const modal = document.querySelector('.modal')
+    if (modal.classList.contains("active")) {
+        document.querySelector("body").style.overflow = `hidden`
+        window.smooth.paused(true);
+    } else {
+        document.querySelector("body").style.overflow = `auto`
+        window.smooth.paused(false);
+
+    }
+}
+
+function closeModal() {
+    const modal = document.querySelector('.modal')
+    const cross = document.querySelector('.modal .modal-cross')
+
+    cross.addEventListener('click', () => {
+        modal.classList.remove("active")
+        checkModalIsOpen()
+    })
+}
+
+
+
+
+function openModal() {
+    const items = document.querySelectorAll('.product-item')
+    const modal = document.querySelector('.modal')
+    items.forEach(item => {
+        item.addEventListener("click", () => {
+            modal.classList.add("active")
+            checkModalIsOpen()
+        })
+    })
+}
+
+closeModal()
+openModal()
 
 let timeout;
 window.addEventListener('resize', () => {

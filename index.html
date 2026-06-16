@@ -1,390 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Учак.ру</title>
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/assets/css/base.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учак.ру</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <script src="assets/js/splitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
 
-    <body>
-        <!-- ============================== HEADER ============================== -->
-        <header>
-            <div class="container">
-                <div class="header__row">
-                    <a href="#" class="link-icon">
-                        <svg class="icon" width="196" height="52">
-                            <use href="/sprite.svg#icon-logo"
-                                xlink:href="/sprite.svg#icon-logo"></use>
-                        </svg>
-                    </a>
-                    <nav>
-                        <ul class="nav__row">
-                            <li class="nav-item"><a href="">Каталог</a></li>
-                            <li class="nav-item"><a href="">О компании</a></li>
-                            <li class="nav-item"><a href="">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="btn primary-btn">
-                        Связаться
-                    </a>
+</head>
 
-                    <button class="burger-menu open">
+<body>
+    <!-- ============================== HEADER ============================== -->
+    <header>
+        <div class="container">
+            <div class="header__row">
+                <a href="#" class="link-icon">
+                    <svg class="icon" width="196" height="52">
+                        <use href="/sprite.svg#icon-logo" xlink:href="/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <nav>
+                    <ul class="nav__row">
+                        <li class="nav-item"><a href="">Каталог</a></li>
+                        <li class="nav-item"><a href="">О компании</a></li>
+                        <li class="nav-item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn primary-btn">
+                    Связаться
+                </a>
 
-                        <svg class="icon burger-open" width="24" height="24">
-                            <use href="/sprite.svg#icon-burger-menu"></use>
-                        </svg>
+                <button class="burger-menu open">
 
-                        <svg class="icon burger-close" width="24" height="24">
-                            <use href="sprite.svg#icon-cross"></use>
-                        </svg>
-                    </button>
+                    <svg class="icon burger-open" width="24" height="24">
+                        <use href="/sprite.svg#icon-burger-menu"></use>
+                    </svg>
 
-                </div>
-                <div class="header__row-mob"></div>
-            </div>
-        </header>
-        <div class="dark-bg"></div>
-        <!-- ============================== HEADER ============================== -->
-
-        <!-- ============================== MAIN SCREEN ============================== -->
-        <section class="main-screen">
-            <div class="container">
-                <div class="main-screen__row">
-                    <div class="main-screen__info">
-                        <h1>Все для <br> <span>Любителей</span> <br>
-                            Природы</h1>
-                        <p>Вы найдете у нас товары для прекрасного дачного
-                            отдыха, пикника и похода.</p>
-                        <a href="#" class="btn primary-btn">Смотреть каталог</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== MAIN SCREEN ============================== -->
-
-        <section class="line"></section>
-
-        <!-- ============================== POPULAR PRODUCTS ============================== -->
-        <section class="popular-products">
-            <div class="container">
-                <div class="popular-products__row">
-                    <h2>Популярные товары</h2>
-                    <div class="products-row">
-                        <div class="product-item">
-                            <span class="product-status hit">Хит</span>
-                            <div class="product-image"></div>
-                            <div class="product-info">
-                                <div class="product-info__top">
-                                    <span
-                                        class="product-info__category">Афганский
-                                        казан</span>
-                                    <h3>Афганский казан CHE TO</h3>
-                                    <span
-                                        class="product-info__description">Описание
-                                        Описание Описание Описание Описание
-                                        Описание Описание Описание Описание
-                                        Описание Описание Описание</span>
-                                    <div class="product-info__status nal">В
-                                        наличии</div>
-                                </div>
-                                <div class="product-info__bottom">
-                                    <span class="product-price">17 000 ₽</span>
-                                    <button
-                                        class="btn primary-btn">Купить</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product-item">
-                            <span class="product-status new">Новинка</span>
-
-                            <div class="product-image">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-info__top">
-                                    <span
-                                        class="product-info__category">Афганский
-                                        казан</span>
-                                    <h3>Афганский казан CHE TO Афганский казан
-                                        CHE TO</h3>
-                                    <span
-                                        class="product-info__description">Описание
-                                        Описание Описание Описание Описание
-                                        Описание Описание Описание Описание
-                                        Описание Описание Описание</span>
-                                    <div class="product-info__status zakaz">Под
-                                        заказ</div>
-                                </div>
-                                <div class="product-info__bottom">
-                                    <span class="product-price">17 000 ₽</span>
-                                    <button
-                                        class="btn primary-btn">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== POPULAR PRODUCTS ============================== -->
-
-        <section class="line"></section>
-
-        <!-- ============================== CATALOG ============================== -->
-        <section class="catalog">
-            <div class="container">
-                <div class="catalog__row">
-                    <h2>Каталог</h2>
-                    <div class="categories-products__row">
-                        <div class="categories-row">
-                            <a class="btn secondary-btn">Самовары
-                                <span>
-                                    <svg class="icon" width="47" height="17">
-                                        <use href="sprite.svg#icon-btn-arrow"
-                                            xlink:href="sprite.svg#icon-btn-arrow">
-                                        </use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a class="btn secondary-btn">Мангалы
-                                <span>
-                                    <svg class="icon" height="17">
-                                        <use href="sprite.svg#icon-btn-arrow"
-                                            xlink:href="sprite.svg#icon-btn-arrow">
-                                        </use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a class="btn secondary-btn active">Афганские казаны
-                                <span>
-                                    <svg class="icon" width="47" height="17"
-                                        viewbox="0 0 47 17" fill="none">
-                                        <use
-                                            href="sprite.svg#icon-btn-arrow"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a class="btn secondary-btn">Подставка под саджей
-                                <span>
-                                    <svg class="icon" width="47" height="17">
-                                        <use href="sprite.svg#icon-btn-arrow"
-                                            xlink:href="sprite.svg#icon-btn-arrow">
-                                        </use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a class="btn secondary-btn">Саджи <span></span></a>
-                            <a class="btn secondary-btn">Учаг </a>
-                        </div>
-
-                        <div class="products__wrapper">
-                            <h3>Афганский казан</h3>
-                            <div class="products-row">
-                                <div class="product-item">
-                                    <span class="product-status hit">Хит</span>
-                                    <div class="product-image"></div>
-                                    <div class="product-info">
-                                        <div class="product-info__top">
-                                            <div
-                                                class="product-info__category">Афганский
-                                                казан</div>
-                                            <h3>Афганский казан CHE TO</h3>
-                                            <p
-                                                class="product-info__description">Описание</p>
-                                            <span
-                                                class="product-info__status nal">В
-                                                наличии</span>
-                                        </div>
-
-                                        <div class="product-info__bottom">
-                                            <div class="product-price">17 000
-                                                ₽</div>
-                                            <button
-                                                class="btn primary-btn">Купить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== CATALOG ============================== -->
-
-        <!-- ============================== ABOUT US ==============================-->
-        <section class="about-us">
-            <div class="container">
-                <div class="about-us__row">
-                    <div class="about-us__text">
-                        <h2>Учак.ру —</h2>
-                        <p>Крутая кухня на свежем воздухе. Отдыхайте на природе
-                            с комфортом благодаря нам. Простой стакан
-                            горячего чая делает
-                            мини-перекус намного лучше, а горячая еда и вовсе
-                            выводит даже однодневный поход на иной
-                            уровень.</p>
-                    </div>
-                    <div class="vertical-line"></div>
-                    <div class="about-us__image">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== ABOUT US ============================== -->
-
-        <!-- ============================== GALLERY ============================== -->
-        <section class="gallery">
-            <div class="container">
-                <div class="gallery-row">
-                    <div class="gallery-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide gallery-slide"></div>
-                            <div class="swiper-slide gallery-slide"></div>
-                            <div class="swiper-slide gallery-slide"></div>
-                            <div class="swiper-slide gallery-slide"></div>
-                            <div class="swiper-slide gallery-slide"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination gallery-pagination"></div>
-                    <div class="swiper-button-next gallery-button-next">
-                        <svg width="24" height="24">
-                            <use href="/sprite.svg#icon-arrow"></use>
-                        </svg>
-                    </div>
-                    <div class="swiper-button-prev gallery-button-prev">
-                        <svg width="24" height="24">
-                            <use href="/sprite.svg#icon-arrow"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================== GALLERY ============================== -->
-
-        <!-- ============================== CONTACTS ============================= -->
-        <section class="contacts">
-            <div class="container">
-                <div class="contacts__row">
-                    <div class="map"></div>
-                    <div class="contacts__info">
-                        <div class="contacts__info-tittle">
-                            <h2>Контакты</h2>
-                            <svg width="46" height="51">
-                                <use href="sprite.svg#icon-flame"></use>
-                            </svg>
-                        </div>
-
-                        <div class="contacts__text">
-                            <div class="contacts__text-item">
-                                <span>Номер телефона</span>
-                                <a href="#">8 927 405 04 14</a>
-                            </div>
-                            <div class="contacts__text-item">
-                                <span>Электронная почта</span>
-                                <a href="#">uchak.ru</a>
-                            </div>
-                            <div class="contacts__text-item">
-                                <span>Адрес</span>
-                                <a href="#">РТ, Сабинский район, п.г.т. Богатые
-                                    Сабы, ул.Г.Тукая 96</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ============================= CONTACTS ============================= -->
-
-        <!-- ============================= FOOTER ============================= -->
-        <footer>
-            <div class="container">
-                <div class="footer__row">
-                    <div class="footer__top">
-                        <div class="footer__top">
-                            <div class="footer__left">
-                                <div class="footer__text">
-                                    <svg width="196" height="51">
-                                        <use href="sprite.svg#icon-logo"></use>
-                                    </svg>
-                                    <span>Всё для отдыха на природе. Мангалы,
-                                        <br>
-                                        грили, очаги и аксессуары для настоящих
-                                        <br>
-                                        ценителей живого огня.</span>
-                                </div>
-                                <ul class="footer__nav">
-                                    <li class="nav-item"><a
-                                            href>Каталог</a></li>
-                                    <li class="nav-item"><a href>О
-                                            компании</a></li>
-                                    <li class="nav-item"><a
-                                            href>Контакты</a></li>
-                                </ul>
-                            </div>
-                            <div class="footer__right">
-                                <div class="footer__social">
-                                    <div class="social-item">
-                                        <svg width="20" height="20">
-                                            <use
-                                                href="sprite.svg#icon-whatsapp"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="social-item">
-                                        <svg width="20" height="20">
-                                            <use
-                                                href="sprite.svg#icon-vk"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="social-item">
-                                        <svg width="20" height="20">
-                                            <use
-                                                href="sprite.svg#icon-max"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="social-item">
-                                        <svg width="20" height="20">
-                                            <use
-                                                href="sprite.svg#icon-telegram"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <a href class="btn primary-btn">Связаться</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="horizontal-line"></div>
-
-                    <div class="footer__bottom">
-                        <div class="footer__left">
-                            <span>© 2026 УЧАК.РУ</span>
-                            <span>ИНН 1673005710</span>
-                            <span>ОГРН 324399035832</span>
-                        </div>
-                        <div class="bud-online">
-                            <span>Разработка сайта <b>БУДЬ В СЕТИ</b></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- =============================== FOOTER ============================== -->
-
-        <!-- =============================== MODAL =============================== -->
-
-        <div class="modal">
-            <div class="modal__content">
-                <div class="modal-cross">
-                    <svg width="24" height="24">
+                    <svg class="icon burger-close" width="24" height="24">
                         <use href="sprite.svg#icon-cross"></use>
                     </svg>
+                </button>
+
+            </div>
+            <div class="header__row-mob"></div>
+        </div>
+    </header>
+    <div class="dark-bg"></div>
+    <!-- ============================== HEADER ============================== -->
+
+
+    <div class="wrapper">
+        <div class="content">
+            <!-- ============================== MAIN SCREEN ============================== -->
+            <section class="main-screen">
+                <div class="container">
+                    <div class="main-screen__row">
+                        <div class="main-screen__info">
+                            <h1 letters-slide-up text-split data-delay="0.5" data-duration="0.5">Все для <br>
+                                <span class="primary">Любителей</span> <br>
+                                Природы
+                            </h1>
+                            <p letters-slide-up text-split data-delay="1" data-duration="0.5">Вы найдете у нас товары
+                                для прекрасного дачного
+                                отдыха, пикника и похода.</p>
+                            <a href="#" class="btn primary-btn">Смотреть каталог</a>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            <!-- ============================== MAIN SCREEN ============================== -->
+
+            <section class="line"></section>
+
+            <!-- ============================== POPULAR PRODUCTS ============================== -->
+            <section class="popular-products">
+                <div class="container">
+                    <div class="popular-products__row">
+                        <h2>Популярные товары</h2>
+                        <div class="products-row">
+                            <div class="product-item">
+                                <span class="product-status hit">Хит</span>
+                                <div class="product-image"></div>
+                                <div class="product-info">
+                                    <div class="product-info__top">
+                                        <span class="product-info__category">Афганский
+                                            казан</span>
+                                        <h3>Афганский казан CHE TO</h3>
+                                        <span class="product-info__description">Описание
+                                            Описание Описание Описание Описание
+                                            Описание Описание Описание Описание
+                                            Описание Описание Описание</span>
+                                        <div class="product-info__status nal">В
+                                            наличии</div>
+                                    </div>
+                                    <div class="product-info__bottom">
+                                        <span class="product-price">17 000 ₽</span>
+                                        <button class="btn primary-btn">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-item">
+                                <span class="product-status new">Новинка</span>
+
+                                <div class="product-image">
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info__top">
+                                        <span class="product-info__category">Афганский
+                                            казан</span>
+                                        <h3>Афганский казан CHE TO Афганский казан
+                                            CHE TO</h3>
+                                        <span class="product-info__description">Описание
+                                            Описание Описание Описание Описание
+                                            Описание Описание Описание Описание
+                                            Описание Описание Описание</span>
+                                        <div class="product-info__status zakaz">Под
+                                            заказ</div>
+                                    </div>
+                                    <div class="product-info__bottom">
+                                        <span class="product-price">17 000 ₽</span>
+                                        <button class="btn primary-btn">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================== POPULAR PRODUCTS ============================== -->
+
+            <section class="line"></section>
+
+            <!-- ============================== CATALOG ============================== -->
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__row">
+                        <h2>Каталог</h2>
+                        <div class="categories-products__row">
+                            <div class="categories-row">
+                                <a class="btn secondary-btn">
+                                    <div class="secondary-btn-arrow">
+                                        <p>
+                                            Самовары
+                                        </p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17">
+                                                <use href="sprite.svg#icon-btn-arrow"
+                                                    xlink:href="sprite.svg#icon-btn-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="btn secondary-btn">
+                                    <div class="secondary-btn-arrow">
+                                        <p>Мангалы</p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17">
+                                                <use href="sprite.svg#icon-btn-arrow"
+                                                    xlink:href="sprite.svg#icon-btn-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="btn secondary-btn active">
+                                    <div class="secondary-btn-arrow">
+                                        <p>Афганские казаны</p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17" viewbox="0 0 47 17" fill="none">
+                                                <use href="sprite.svg#icon-btn-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="btn secondary-btn">
+                                    <div class="secondary-btn-arrow">
+                                        <p>
+                                            Подставка под саджей
+                                        </p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17">
+                                                <use href="sprite.svg#icon-btn-arrow"
+                                                    xlink:href="sprite.svg#icon-btn-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="btn secondary-btn">
+                                    <div class="secondary-btn-arrow">
+                                        <p>Саджи</p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17">
+                                                <use href="sprite.svg#icon-btn-arrow"
+                                                    xlink:href="sprite.svg#icon-btn-arrow">
+                                                </use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="btn secondary-btn">
+                                    <div class="secondary-btn-arrow">
+                                        <p>Учаг</p>
+                                        <span>
+                                            <svg class="icon" width="47" height="17">
+                                                <use href="sprite.svg#icon-btn-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products__wrapper">
+                                <h3>Афганский казан</h3>
+                                <div class="products-row">
+                                    <div class="product-item">
+                                        <span class="product-status hit">Хит</span>
+                                        <div class="product-image"></div>
+                                        <div class="product-info">
+                                            <div class="product-info__top">
+                                                <div class="product-info__category">Афганский
+                                                    казан</div>
+                                                <h3>Афганский казан CHE TO</h3>
+                                                <p class="product-info__description">Описание</p>
+                                                <span class="product-info__status nal">В
+                                                    наличии</span>
+                                            </div>
+
+                                            <div class="product-info__bottom">
+                                                <div class="product-price">17 000
+                                                    ₽</div>
+                                                <button class="btn primary-btn">Купить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================== CATALOG ============================== -->
+
+            <!-- ============================== ABOUT US ==============================-->
+            <section class="about-us">
+                <div class="container">
+                    <div class="about-us__row">
+                        <div class="about-us__text">
+                            <h2>Учак.ру —</h2>
+                            <p>Крутая кухня на свежем воздухе. Отдыхайте на природе
+                                с комфортом благодаря нам. Простой стакан
+                                горячего чая делает
+                                мини-перекус намного лучше, а горячая еда и вовсе
+                                выводит даже однодневный поход на иной
+                                уровень.</p>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div class="about-us__image">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================== ABOUT US ============================== -->
+
+            <!-- ============================== GALLERY ============================== -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery-row">
+                        <div class="gallery-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide gallery-slide"></div>
+                                <div class="swiper-slide gallery-slide"></div>
+                                <div class="swiper-slide gallery-slide"></div>
+                                <div class="swiper-slide gallery-slide"></div>
+                                <div class="swiper-slide gallery-slide"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination gallery-pagination"></div>
+                        <div class="swiper-button-next gallery-button-next">
+                            <svg width="24" height="24">
+                                <use href="/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev gallery-button-prev">
+                            <svg width="24" height="24">
+                                <use href="/sprite.svg#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================== GALLERY ============================== -->
+
+            <!-- ============================== CONTACTS ============================= -->
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__row">
+                        <div class="map"></div>
+                        <div class="contacts__info">
+                            <div class="contacts__info-tittle">
+                                <h2>Контакты</h2>
+                                <svg width="46" height="51">
+                                    <use href="sprite.svg#icon-flame"></use>
+                                </svg>
+                            </div>
+
+                            <div class="contacts__text">
+                                <div class="contacts__text-item">
+                                    <span>Номер телефона</span>
+                                    <a href="#">8 927 405 04 14</a>
+                                </div>
+                                <div class="contacts__text-item">
+                                    <span>Электронная почта</span>
+                                    <a href="#">uchak.ru</a>
+                                </div>
+                                <div class="contacts__text-item">
+                                    <span>Адрес</span>
+                                    <a href="#">РТ, Сабинский район, п.г.т. Богатые
+                                        Сабы, ул. Г. Тукая 96</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ============================= CONTACTS ============================= -->
+
+            <!-- ============================= FOOTER ============================= -->
+            <footer>
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__top">
+                            <div class="footer__top">
+                                <div class="footer__left">
+                                    <div class="footer__text">
+                                        <svg width="196" height="51">
+                                            <use href="sprite.svg#icon-logo"></use>
+                                        </svg>
+                                        <span>Всё для отдыха на природе. Мангалы,
+                                            <br>
+                                            грили, очаги и аксессуары для настоящих
+                                            <br>
+                                            ценителей живого огня.</span>
+                                    </div>
+                                    <ul class="footer__nav">
+                                        <li class="nav-item"><a href>Каталог</a></li>
+                                        <li class="nav-item"><a href>О
+                                                компании</a></li>
+                                        <li class="nav-item"><a href>Контакты</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__right">
+                                    <div class="footer__social">
+                                        <div class="social-item">
+                                            <svg width="20" height="20">
+                                                <use href="sprite.svg#icon-whatsapp"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="social-item">
+                                            <svg width="20" height="20">
+                                                <use href="sprite.svg#icon-vk"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="social-item">
+                                            <svg width="20" height="20">
+                                                <use href="sprite.svg#icon-max"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="social-item">
+                                            <svg width="20" height="20">
+                                                <use href="sprite.svg#icon-telegram"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href class="btn primary-btn">Связаться</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="horizontal-line"></div>
+
+                        <div class="footer__bottom">
+                            <div class="footer__left">
+                                <span>© 2026 УЧАК.РУ</span>
+                                <span>ИНН 1673005710</span>
+                                <span>ОГРН 324399035832</span>
+                            </div>
+                            <div class="bud-online">
+                                <span>Разработка сайта <b>БУДЬ В СЕТИ</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- =============================== FOOTER ============================== -->
+        </div>
+    </div>
+    <!-- =============================== MODAL =============================== -->
+
+    <div class="modal">
+        <div class="modal__content">
+            <div class="modal-cross">
+                <svg width="24" height="24">
+                    <use href="sprite.svg#icon-cross"></use>
+                </svg>
+            </div>
+            <div class="modal-body">
                 <div class="modal-gallery">
                     <div class="modal-swiper">
                         <div class="swiper-wrapper">
@@ -426,31 +454,30 @@
                 </div>
             </div>
         </div>
-        <!-- ============================== MODAL ============================== -->
+    </div>
+    <!-- ============================== MODAL ============================== -->
 
-        <!-- ============================== COOKIE ============================== -->
-        <div class="cookie">
-            <p>Мы используем файлы cookie для того, чтобы улучшить работу сайта
-                и предоставить вам больше возможностей. Продолжая использовать
-                сайт, вы соглашаетесь с условиями <a href="#">использования
-                    файлов cookie.</a></p>
-            <button class="btn secondary-btn">Хорошо</button>
-        </div>
-        <!-- =============================== COOKIE ================================ -->
+    <!-- ============================== COOKIE ============================== -->
+    <div class="cookie active">
+        <p>Мы используем файлы cookie для того, чтобы улучшить работу сайта
+            и предоставить вам больше возможностей. Продолжая использовать
+            сайт, вы соглашаетесь с условиями <a href="#">использования
+                файлов cookie.</a></p>
+        <button class="btn secondary-btn">Хорошо</button>
+    </div>
+    <!-- =============================== COOKIE ================================ -->
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-        <!-- ScrollSmoother requires ScrollTrigger -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
 
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-        <script src="/assets/js/app.js"></script>
-        <script src="/assets/js/swiper.js"></script>
-    </body>
+    <script src="assets/js/animation.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/swiper.js"></script>
+</body>
 
 </html>
