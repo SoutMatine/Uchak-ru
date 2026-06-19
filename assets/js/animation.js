@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger)
 
-    window.smooth = ScrollSmoother.create({
-        wrapper: '.wrapper',
-        content: '.content',
-        smooth: 1.3,
-        clean: 1,
-        results: true,
-        normalizeScroll: true,
-        ingoreMobileResize: true,
-        ignore: '.modal, .modal *'
-    })
+    // window.smooth = ScrollSmoother.create({
+    //     wrapper: '.wrapper',
+    //     content: '.content',
+    //     smooth: 1,
+    //     clean: 1,
+    //     results: true,
+    //     normalizeScroll: true,
+    //     ingoreMobileResize: true,
+    //     effects: true,
+    //     preventDefault: true,
+    //     ignore: '.modal, .modal *, .products-row'
+    // })
+
+    let mainTl = gsap.timeline()
+
 
     const textSplit = document.querySelectorAll("[text-split]");
 
     const lettersSlideUp = document.querySelectorAll("[letters-slide-up]");
-    const lettersSlideDown = document.querySelectorAll("[letters-slide-down]");
 
     gsap.set(textSplit, { opacity: 1 });
 
@@ -41,6 +45,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         createScrollTrigger(e, tl);
     });
+
+    mainTl.from('.main-screen .main-screen__img', {
+        opacity: 0,
+        duration: 0.5,
+        delay: 1,
+        ease: "power2.out"
+    })
+
+    mainTl.from('.main-screen .btn', {
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.out"
+    })
+
+    mainTl.from('header, section:not(.main-screen, .line)', {
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.out"
+    })
+
+    mainTl.from('.line', {
+        opacity: 0,
+        duration: 0.5,
+        delay: 0.1,
+        ease: "power2.out"
+    })
 
 
     function createScrollTrigger(triggerElement, timeline) {

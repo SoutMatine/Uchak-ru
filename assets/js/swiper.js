@@ -15,16 +15,16 @@ var swiper = new Swiper(".gallery-swiper", {
         320: {
             slidesPerView: 2,
             spaceBetween: 12
-        
-        
-            
+
+
+
         },
 
         768: {
             slidesPerView: 3,
             spaceBetween: 12
-            
-            
+
+
         },
 
         1024: {
@@ -36,6 +36,7 @@ var swiper = new Swiper(".gallery-swiper", {
 
 var modalSwiper = new Swiper(".modal-swiper", {
     slidesPerView: 1,
+    spaceBetween: 12,
     pagination: {
         el: ".modal-pagination",
         clickable: true,
